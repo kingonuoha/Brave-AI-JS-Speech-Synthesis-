@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'montserrat';
+    font-size: 20px;
+
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: rgb(37, 37, 37);
+    flex-direction: column;
+    padding: 10px 0;
+}
+section h1{
+    color: rgba(255, 255, 255, .322);
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+section p {
+    text-align: center;
+    color: rgba(255, 255, 255, .322);
+    width: 100%;
+    margin-bottom: 40px;
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.texts p{
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    text-align:left;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.texts p.reply{
+    background-color: rgb(255, 94, 0);
+    color: rgb(199, 243, 198);
+    text-align: right;
+    /* background-color: bisque; */
+}
+#spk{
+    background-color: rgb(141, 141, 141);
+    width: 80px;
+    height: 80px;
+    padding: 12px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+    position: absolute;
+    bottom: 23px;
+    left: 23px;
+    font-size: 2em;
+    z-index: 2;
+    
+}
+.startAnim{
+    animation: blinkMic 10s infinite ease-in-out;
+}
+
+@keyframes blinkMic {
+    0%, 20%, 40%, 50%, 70%, 90%{
+        color: white;
+    }
+    12%, 30%, 44%, 60%, 85%, 100%{
+        color: red;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#text{
+    width: 100%;
+    background-color: gray;
+    color: white;
+    padding: 12px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+textarea#text:focus{
+    outline: none;
+    cursor: pointer;
+}
+.speech{
+    margin: 22px;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: #ae34cc;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
